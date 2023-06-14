@@ -1,5 +1,23 @@
-$container-paddings: 24px;
 
 .container {
-  max-width: calc(1090px + $container-paddings);
+  --container-paddings: 24px;
+
+  width: 100%;
+  max-width: calc(1090px + var(--container-paddings));
+  margin-inline: auto;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 44px;
+
+  .col-5 {
+    width: 46%;
+  }
+
+  .col-6 {
+    width: 48%;
+  }
 }
