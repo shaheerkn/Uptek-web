@@ -1,0 +1,5 @@
+$container-paddings: 24px;
+
+.container {
+  max-width: calc(1090px + $container-paddings);
+}
